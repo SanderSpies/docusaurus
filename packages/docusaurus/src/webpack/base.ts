@@ -71,8 +71,8 @@ export function createBaseConfig(
       // core-js@2, we should use core-js@2.
       modules: [
         path.resolve(__dirname, '..', '..', 'node_modules'),
-        'node_modules',
         path.resolve(fs.realpathSync(process.cwd()), 'node_modules'),
+        'node_modules',
       ],
     },
     optimization: {
